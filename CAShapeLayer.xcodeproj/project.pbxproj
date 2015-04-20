@@ -14,6 +14,8 @@
 		AC75D6A01AE53D27004E85CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC75D69F1AE53D27004E85CB /* Images.xcassets */; };
 		AC75D6A31AE53D27004E85CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC75D6A11AE53D27004E85CB /* LaunchScreen.xib */; };
 		AC75D6AF1AE53D27004E85CB /* CAShapeLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC75D6AE1AE53D27004E85CB /* CAShapeLayerTests.m */; };
+		AC75D6BA1AE53D4D004E85CB /* LoaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC75D6B91AE53D4D004E85CB /* LoaderImageView.m */; };
+		F432C4E546FA9E2FA3AB2DC7 /* libPods-CAShapeLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DDA769F209B3CC8CCE77BC /* libPods-CAShapeLayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65155163B009A34D53C4AE59 /* Pods-CAShapeLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAShapeLayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CAShapeLayer/Pods-CAShapeLayer.release.xcconfig"; sourceTree = "<group>"; };
+		6730F968EDF6DC964F5C7120 /* Pods-CAShapeLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAShapeLayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CAShapeLayer/Pods-CAShapeLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		AC75D68F1AE53D27004E85CB /* CAShapeLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAShapeLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC75D6931AE53D27004E85CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC75D6941AE53D27004E85CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		AC75D6A81AE53D27004E85CB /* CAShapeLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAShapeLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC75D6AD1AE53D27004E85CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC75D6AE1AE53D27004E85CB /* CAShapeLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerTests.m; sourceTree = "<group>"; };
+		AC75D6B81AE53D4D004E85CB /* LoaderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderImageView.h; sourceTree = "<group>"; };
+		AC75D6B91AE53D4D004E85CB /* LoaderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderImageView.m; sourceTree = "<group>"; };
+		D5DDA769F209B3CC8CCE77BC /* libPods-CAShapeLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CAShapeLayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F432C4E546FA9E2FA3AB2DC7 /* libPods-CAShapeLayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68EE84F9A57C43ADB34AD4B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6730F968EDF6DC964F5C7120 /* Pods-CAShapeLayer.debug.xcconfig */,
+				65155163B009A34D53C4AE59 /* Pods-CAShapeLayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC75D6861AE53D27004E85CB = {
 			isa = PBXGroup;
 			children = (
 				AC75D6911AE53D27004E85CB /* CAShapeLayer */,
 				AC75D6AB1AE53D27004E85CB /* CAShapeLayerTests */,
 				AC75D6901AE53D27004E85CB /* Products */,
+				68EE84F9A57C43ADB34AD4B5 /* Pods */,
+				F5DF3F36BD138A5BB91B637B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +104,8 @@
 				AC75D6971AE53D27004E85CB /* AppDelegate.m */,
 				AC75D6991AE53D27004E85CB /* ViewController.h */,
 				AC75D69A1AE53D27004E85CB /* ViewController.m */,
+				AC75D6B81AE53D4D004E85CB /* LoaderImageView.h */,
+				AC75D6B91AE53D4D004E85CB /* LoaderImageView.m */,
 				AC75D69C1AE53D27004E85CB /* Main.storyboard */,
 				AC75D69F1AE53D27004E85CB /* Images.xcassets */,
 				AC75D6A11AE53D27004E85CB /* LaunchScreen.xib */,
@@ -119,6 +140,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F5DF3F36BD138A5BB91B637B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5DDA769F209B3CC8CCE77BC /* libPods-CAShapeLayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC75D6B21AE53D27004E85CB /* Build configuration list for PBXNativeTarget "CAShapeLayer" */;
 			buildPhases = (
+				50B4530B7A94C2E248696EDB /* Check Pods Manifest.lock */,
 				AC75D68B1AE53D27004E85CB /* Sources */,
 				AC75D68C1AE53D27004E85CB /* Frameworks */,
 				AC75D68D1AE53D27004E85CB /* Resources */,
+				A822FCFC9F02E319228E181D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +245,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50B4530B7A94C2E248696EDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A822FCFC9F02E319228E181D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAShapeLayer/Pods-CAShapeLayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC75D68B1AE53D27004E85CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AC75D69B1AE53D27004E85CB /* ViewController.m in Sources */,
+				AC75D6BA1AE53D4D004E85CB /* LoaderImageView.m in Sources */,
 				AC75D6981AE53D27004E85CB /* AppDelegate.m in Sources */,
 				AC75D6951AE53D27004E85CB /* main.m in Sources */,
 			);
@@ -297,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,6 +406,7 @@
 		};
 		AC75D6B31AE53D27004E85CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6730F968EDF6DC964F5C7120 /* Pods-CAShapeLayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CAShapeLayer/Info.plist;
@@ -351,6 +417,7 @@
 		};
 		AC75D6B41AE53D27004E85CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65155163B009A34D53C4AE59 /* Pods-CAShapeLayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CAShapeLayer/Info.plist;
@@ -412,6 +479,7 @@
 				AC75D6B41AE53D27004E85CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC75D6B51AE53D27004E85CB /* Build configuration list for PBXNativeTarget "CAShapeLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +488,7 @@
 				AC75D6B71AE53D27004E85CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

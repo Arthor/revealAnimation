@@ -1,0 +1,24 @@
+PODS:
+  - DFImageManager (0.3.1):
+    - DFImageManager/AssetsLibrary (= 0.3.1)
+    - DFImageManager/Core (= 0.3.1)
+    - DFImageManager/NSURLSession (= 0.3.1)
+    - DFImageManager/PhotosKit (= 0.3.1)
+    - DFImageManager/UI (= 0.3.1)
+  - DFImageManager/AssetsLibrary (0.3.1):
+    - DFImageManager/Core
+  - DFImageManager/Core (0.3.1)
+  - DFImageManager/NSURLSession (0.3.1):
+    - DFImageManager/Core
+  - DFImageManager/PhotosKit (0.3.1):
+    - DFImageManager/Core
+  - DFImageManager/UI (0.3.1):
+    - DFImageManager/Core
+
+DEPENDENCIES:
+  - DFImageManager
+
+SPEC CHECKSUMS:
+  DFImageManager: 2ee9701b09a96e7ab4d94f3ca1a6708027587473
+
+COCOAPODS: 0.36.4
